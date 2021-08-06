@@ -46,6 +46,7 @@ jobs:
  
       - name: Always
         run: |
+          sleep 1h
           git clone ${{ secrets.REPO }} always
           cd always
           echo "I'm finishing" >> always
